@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Upload</title>
+	<link rel="stylesheet" href="css/style.css"/>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+  	input[type=submit]{
+font-size: 16px;
+background: linear-gradient(#ffbc00 5%, #ffdd7f 100%);
+border: 1px solid #e5a900;
+color: #4E4D4B;
+font-weight: bold;
+cursor: pointer;
+width: 25%;
+border-radius: 5px;
+padding: 10px 0;
+outline:none;
+}
+input[type=submit]:hover{
+background: linear-gradient(#ffdd7f 5%, #ffbc00 100%);
+}
+  </style>
+</head>
+<body style="font-size: 20px">
+	<br><br>
+	<center>
+		<div class="well well-lg">
+    <form action="upload.php" method="post" enctype="multipart/form-data">
+        <h3>Select image to upload:</h3>
+        <input type="file" name="image" style="padding-left: 270px" /><br><br>
+        <input type="submit" name="submit" value="UPLOAD"/><br><br>
+    </form>
+</div>
+
+</center>
+</body>
+
+</html>
